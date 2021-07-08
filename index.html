@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>World Bank</title>
+</head>
+<body>
+    <div class="page">
+    <header class="header">
+		<img src="img/bank1.jpg" width="350" height="150" alt="Bank">
+        <div class="phones">
+            <div class="phone"><a href="tel:8-800-100-5005">8-800-100-5005</a></div>
+            <div class="phone"><a href="tel:+7(3452)522-000">+7(3452)522-000</a></div>
+          </div>
+        
+</header>
+<main>
+    <ul class="content">
+        <li class="link"><a href="#">Кредитные карты</a></li>
+        <li class="link"><a href="#">Вклады</a></li>  
+        <li class="link"><a href="#">Дебетовая карта</a></li>
+        <li class="link"><a href="#">Страхование</a></li>
+        <li class="link"><a href="#">Друзья</a></li>
+        <li class="link"><a href="#">Интернет-банк</a></li>    
+    </ul>
+    <ul class="breadcrumb">
+        <li><href="#">Главная</li>
+        <li><href="#">Вклады</li>
+        <li><href="#">Калькулятор</li>
+        
+      </ul>
+      <div class="box">
+        <table>
+            <h2 align=>Калькулятор</h2>
+            <table>
+                <tr>
+                    <td>Дата оформления вклада</td>
+                    <td><input type="date" name="calendar"></td>
+                <tr>
+                    <tr>
+                    <td>Сумма вклада</td>
+                      <td><input type="number" min="1000" max="3000000" value="none"></td>
+                    <div class="range">
+                         <div class="sliderValue">
+                        <td>
+                    </div>
+                    <div class="field">
+                        <div class="value left">1 тыс.руб</div>
+                        <td><input type="range" min="1000" max="3000000" value="1" steps="1">
+                        <div class="value right">3000000</div></td></tr>
+                    </div>
+                    
+                </div>
+                <tr>
+                    <td>Срок вклада</td><td><select атрибуты>
+                    <option атрибуты>1 год</option>
+                    <option атрибуты>2 года</option>
+                    <option атрибуты>3 года</option>
+                    <option атрибуты>4 года</option>
+                    <option атрибуты>5 лет</option> 
+                  </select></td>
+                </tr>
+                  <tr>
+                      <td>Пополнение вклада</td>
+                    <div class="inp">
+                       <td><input input name="vklad" type="radio" value="net"> Нет
+                       <input name="vklad" type="radio" value="Da">Да</td>
+                    </tr>
+                           <td>Сумма пополнения вклада<td><input type="number" min="1000" max="3000000" value="none">
+                        <td><input type="range" min="1000" max="3000000" step="1" value="50"></td>
+                    </tr>  
+                    </div>  
+                </table>
+                <a  href="#" class="button24">Рассчитать</a> 
+    </form>
+</div>
+</div>
+<script>
+    const sliderValue = document.querySelector("span")
+    const inputSlider = document.querySelector("input");
+    inputSlider.oninput = (()=>{
+        let value = inputSlider.value;
+        sliderValue.textContent=value;
+        sliderValue.style.left = (value/2) + "%";
+    });
+</script>
+</main>
+<footer>
+<ul class="footer">
+        <li><a href="#">Кредитные карты</a></li>
+        <li><a href="#">Вклады</a></li>  
+        <li><a href="#">Дебетовая карта</a></li>
+        <li><a href="#">Страхование</a></li>
+        <li><a href="#">Друзья</a></li>
+        <li><a href="#">Интернет-банк</a></li>
+    </ul>
+</footer>
+</body>
+</html>

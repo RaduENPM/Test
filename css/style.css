@@ -1,0 +1,241 @@
+
+body {
+  margin: 0;
+  height: 100;
+  color: #111; 
+}
+*,
+*:before
+*::after{
+box-sizing : border-box;
+}
+.page {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.header{
+  background-color: #FFFFFF;
+  height: 150px;
+  margin: 0px 0px 20px;
+}
+.content {
+  color: #21e66c;
+}
+.phone{
+	color: rgb(201, 29, 29); 
+}
+.phones {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  
+  }
+.phone a {
+	color: #ffa500;
+	font-size: 15px;
+	font-weight: 900;
+}
+
+.box {
+  width: 800px;
+  height: 380px;
+  background-color: #dcdcdd;
+  margin-left: 17px;
+  display: inline-block;
+}
+h2 {
+  margin-left: 155px;
+  color: #ffa500;
+}
+.table {
+  table-layout: fixed;
+  width: 200px;
+  
+}
+input {clear:both; text-align:right;}
+.table td {
+ width: 2%;
+}
+ td{
+ line-height: 2;
+ text-align: right;
+ padding-left: 2px;
+}
+.footer {
+  
+  height: 50px;
+  padding: 20px;
+  background-color: rgb(12, 1, 1); 
+}
+
+.footer li {
+  text-decoration: underline;
+  text-underline-position: under;
+  font-size: 12px;
+  display: inline-block;
+  text-align: left;
+}
+.content {
+ width: auto;
+}
+main{
+  padding-top: 10px;
+  padding-bottom: 75px;
+  background-color: #FFFFFF;
+  display:inline-block;
+
+}
+ul {
+    list-style: none;
+    margin: 5; 
+    padding-left: 0;
+    margin-top:0px; 
+    height: 50px; 
+    background:#000; 
+    display: flex;
+    margin: auto;
+
+  }
+
+  .link:not(:last-child){
+    border-right: 1px solid #D43737; 
+  }
+  a {
+    text-decoration: none; 
+    color:#fff; 
+    padding:0px 50px; 
+    font-family: sans-serif; 
+    line-height:50px; 
+    display: block; 
+    border-right: 1px solid #D43737; 
+    
+  }
+
+  a:last-child{
+    border: 0;
+   }
+
+  a:hover {
+    background:#D43737;
+  }
+
+  li {
+    float:left; 
+    position:relative; 
+  }
+
+  ul.breadcrumb {
+    padding: 5px 20px;
+    list-style: none;
+    background-color: #FFFFFF;
+    
+  }
+  
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 14px;
+  }
+  
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "-";
+  }
+ 
+  
+  ul.breadcrumb li  {
+    color: #000;
+    text-decoration: underline;
+  }
+  .range{
+    height: 10px;
+    width: 350px;
+    padding: 0 65px 0 45px;
+  }
+  .range .sliderValue {
+    position: relative;
+    width: 100;
+  }
+  .range .sliderValue span{
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    font-weight:500;
+    top: 40px;
+    transform: translate(-50%);
+    line-height: 55px;
+    z-index: 2;
+
+  }
+  .range .sliderValue span:after{
+    position: absolute;
+    content: "";
+    
+    width: 40px;
+    background: red;
+    left: 50%;
+
+    transform: translateX(-50%);  
+    z-index: -1;
+    
+
+  }
+  .range .field {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+  }
+  .range .field .value.left{
+    left: -22px;
+  }
+  .range .field .value.right{
+    right: -43px;
+  }
+
+  .range .field .value{
+    position:absolute;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(5, 8, 2);
+  }
+  .range .field input {
+  -webkit-appearance: none;
+  height: 5px;
+  width: 100%;
+  background: #c5c3d3;
+  border-radius: 5;
+  outline: none;
+  border: none;
+  }
+  .range .field .input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background: #664aff;
+    border-radius: 50px;
+    border: 1px solid #664aff;
+    cursor: pointer;
+  }
+  .range .field input:: {
+    background: #21e66c;
+  }
+  a.button24 {
+    display: inline-block;
+    color: rgb(0, 0, 0); 
+    text-decoration: none; 
+    user-select: none; 
+    background: rgb(0, 255, 42); 
+    padding-left: 1; 
+    outline: none; 
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 25px;
+  } 
+  a.button24:hover { background: rgb(19, 224, 98); } 
+  a.button24:active { background: rgb(0, 168, 22); } 
